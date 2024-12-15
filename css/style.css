@@ -87,8 +87,8 @@ h4 {
 .logo {
   background: -webkit-linear-gradient(
     top right,
-    white,
-    white
+    #01b1d1,
+    #00fcfa
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
