@@ -12,7 +12,17 @@
   line-height: 0;
   height: 0;
 }
-
+.logo-img {
+  max-height: 60px; /* Limit the height of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between the logo and the text */
+}
+/* Optional: Adjust the link style */
+.logo-link {
+  display: flex;
+  align-items: center; /* Center the logo and name vertically */
+  text-decoration: none; /* Remove underline from the link */
+}
 .clear {
   clear: both;
 }
@@ -77,8 +87,8 @@ h4 {
 .logo {
   background: -webkit-linear-gradient(
     top right,
-    rgba(18, 55, 246, 1),
-    rgba(9, 244, 244, 1)
+    white,
+    white
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -88,8 +98,8 @@ h4 {
 .featured-projects-box h3 {
   background: -webkit-linear-gradient(
     90.98deg,
-    rgba(24, 185, 207, 0.9) -2.14%,
-    #6688ff 103.54%
+    00897a,
+    00897a
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -570,7 +580,7 @@ h3 {
   margin: 2.2rem 0 0;
   background: -webkit-linear-gradient(
     90.98deg,
-    rgba(24, 185, 207, 0.9) -2.14%,
+    00897a,
     #6688ff 103.54%
   );
   -webkit-background-clip: text;
@@ -602,7 +612,7 @@ h3 {
   font-size: 1.6rem;
   background: -webkit-linear-gradient(
     90.98deg,
-    rgba(24, 185, 207, 0.9) -2.14%,
+    00897a,
     #6688ff 103.54%
   );
   -webkit-background-clip: text;
@@ -640,7 +650,7 @@ footer {
 footer span {
   background: -webkit-linear-gradient(
     90.98deg,
-    rgba(24, 185, 207, 0.9) -2.14%,
+    00897a,
     #6688ff 103.54%
   );
   -webkit-background-clip: text;
@@ -824,6 +834,25 @@ footer span {
     position: relative;
     padding: 2rem;
     border-radius: 0.8rem;
+    align-items:center;
+    left: 10%;
+    top: 5%;
+    /* background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 1rem 3rem 0 rgba(27, 27, 27, 0.2); */
+    backdrop-filter: blur(5px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.7);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 1;
+  }
+  .project-main-info2 {
+    position: relative;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    align-items:center;
+    right: 10%;
+    top: 5%;
     /* background: rgb(255, 255, 255, 0.05);
     box-shadow: 0 1rem 3rem 0 rgba(27, 27, 27, 0.2); */
     backdrop-filter: blur(5px) saturate(200%);
@@ -951,7 +980,7 @@ footer span {
 
   .nav-menu {
     position: static;
-    width: 30%;
+    width: 55%;
     height: auto;
     justify-self: flex-end;
     flex-direction: row;
