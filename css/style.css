@@ -287,8 +287,8 @@ main {
 .name-highlight {
   background: -webkit-linear-gradient(
     top right,
-    rgba(18, 55, 246, 1),
-    rgba(9, 244, 244, 1)
+    #01b1d1,
+    #00fcfa
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
